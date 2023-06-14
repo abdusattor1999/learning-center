@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Start21 O'quv markazi</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <!-- fonts awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  {% block content %}
+  {% endblock content %}
+  
+
+<!-- info section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="info_contact">
+          <h4>
+            Bog'lanish
+          </h4>
+          <div class="contact_link_box">
+            <a href="tel:+998972163333">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Telefon :  +998 97 216 33 33
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                start21.lc@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="info_social">
+          <a href="https://t.me/effortless_education">
+            <i class="fa fa-telegram mr-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/start21.lc/">
+            <i class="fa fa-instagram mr-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/effortlesseducationservice/">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h4>
+            Linklar
+          </h4>
+          <div class="info_links">
+            <a  href="{% url 'courses:home' %}">
+              Bosh Sahifa
+            </a>
+            <!-- <a class="" href="#about">
+              <img src="images/nav-bullet.png" alt="">
+              Biz haqimizda
+            </a>
+            <a class="" href="courses">
+              <img src="images/nav-bullet.png" alt="">
+              Kurslar
+            </a> -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            &copy; <span id="displayYear"></span> Bitiruv malakaviy ishi
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
