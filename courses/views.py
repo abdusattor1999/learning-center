@@ -34,7 +34,7 @@ def course_details(request, pk=None):
         form = ArizaForm(request.POST)
         if form.is_valid():
             data = form.cleaned_data
-            sendSimpleEmail('Kurs uchun yangi ariza !', data['name'], data['course'], data['phone'],"abdusattor.work@gmail.com" )
+            sendSimpleEmail('Kurs uchun yangi ariza !', data['name'], data['course'], data['phone'],"mukhlisazokirjonova@gmail.com" )
             return redirect('courses:home')
     
     course = Course.objects.filter(id=pk, active=True).last()
